@@ -99,7 +99,7 @@
     }
 
 }
-@media screen and (max-width:770px) {
+@media screen and (max-width:767px) {
     .side-cus {
         top:90vh;
         left: 0;
@@ -158,6 +158,9 @@
 .fa-envelope {
     color: #343a40;
 }
+.fa-map-signs {
+    color: #78909C;
+}
 .fa-github:hover {
     color:#6e5494;
 }
@@ -166,6 +169,9 @@
 }
 .fa-envelope:hover {
     color: #D44638;
+}
+.fa-map-signs:hover {
+    color: #343a40;
 }
 .fa-github:target {
     color:#6e5494;
@@ -181,6 +187,14 @@
 }
 #bolt:hover .fa-bolt {
     color: #FF8C00;
+}
+
+#source-link .fa-github {
+    color: #17a2b8;
+}
+
+#source-link:hover .fa-github {
+    color: #6e5494;
 }
 #avatar {
     position:fixed;
