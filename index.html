@@ -8,13 +8,13 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/animation.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <title>Bootstrap</title>
+  <title>Frank B.</title>
 </head>
 <body>
 <nav class="navbar bg-light navbar-light nav-pills navbar-expand-sm fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="index.html"><i class="fas fa-bolt" style="color: #FFB900"></i> Frank B.</a>
-    <button class="navbar-toggler" style="border: 0px" type="button"
+    <a class="navbar-brand" href="index.html" id="bolt"><i class="fas fa-bolt"></i> Frank B.</a>
+    <button class="navbar-toggler" style="border: 0" type="button"
             data-toggle="collapse" data-target="#nav-tog"
             aria-controls="MyTogNav" aria-expanded="false">
       <span><i class="fas fa-map-signs" style="color: #78909C"></i></span>
@@ -27,19 +27,36 @@
   </div>
 </nav>
 <div class="container row align-items-center">
-    <div class="content cus" style="font-family: 'Segoe UI Light'">
-      <div class=" align-items-sm-center align-self-center text-cus">
-        <h1 class="fadeInUp animated"><strong>Hi!</strong></h1>
-        <h1 class="fadeInUp animated" style="animation-delay: 0.4s">My name is Frank,</h1>
-        <h1 class="fadeInUp animated text-muted" style="animation-delay: 0.75s"><small>I'm a:</small></h1>
+  <div class="content cus" style="font-family: 'Segoe UI Light'">
+    <div class=" align-items-sm-center align-self-center text-cus">
+      <h1 class="fadeInUp animated"><strong>Hi!</strong></h1>
+      <h1 class="fadeInUp animated" style="animation-delay: 0.4s">My name is Frank,</h1>
+      <h1 class="fadeInUp animated text-muted" style="animation-delay: 0.75s"><small>I'm a:</small></h1>
+      <div class="text-center" id="avatar">
+        <img src="image/avatar.png" class="rounded img-cus" alt="avatar">
       </div>
     </div>
-    <div class="content side-cus">
-      <p class="lead mt-5 fadeInUp animated" style="animation-delay: 1s"><strong>Super nerd</strong> who loves programming and creating and uses Linux and enjoys to
-        customize all of the development environment. Interested in
-        devising a better problem-solving method for challenging tasks, and learning new technologies and tools if the
-        need arises.</p>
-    </div>
+
+  </div>
+
+  <div class="content side-cus">
+    <p class="lead mt-5 fadeInUp animated" style="animation-delay: 1s"><strong>Super nerd</strong> who loves programming and creating and uses Linux and enjoys to
+      customize all of the development environment. Interested in
+      devising a better problem-solving method for challenging tasks, and learning new technologies and tools.
+    </p>
+    <p class="lead mt-5 fadeInUp animated " style="animation-delay: 1s"> You can reach me on :
+      <a href="https://github.com/franklad" target="_blank" class="text-info no-underline mr-2 ml-2">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/franklad/" target="_blank" class="text-info no-underline mr-2">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="mailto: frankbzd@gmail.com" target="_blank" class="text-info no-underline mr-2">
+        <i class="far fa-envelope"></i>
+      </a>
+    </p>
+  </div>
+
 </div><!-- content container -->
 <script src="js/jquery.slim.min.js"></script>
 <script src="js/popper.min.js"></script>
