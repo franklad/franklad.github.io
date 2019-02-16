@@ -99,7 +99,7 @@
     }
 
 }
-@media screen and (max-width:750px) {
+@media screen and (max-width:770px) {
     .side-cus {
         top:90vh;
         left: 0;
@@ -117,14 +117,15 @@
         background-color: transparent;
     }
     #avatar .img-cus{
-        position:fixed;
         height: auto;
         width: auto;
         max-width: 100px;
         max-height: 100px;
-        margin-left: -8px;
+    }
+    #avatar {
+        position: fixed;
         top:45%;
-        left:10%
+        left:35%;
     }
 }
 
@@ -183,6 +184,9 @@
 }
 #avatar {
     position:fixed;
-    margin-left: -5vh;
-    margin-top: 5.5vh;
+    bottom: 0;
+    left: 8%;
+}
+#avatar .img-cus{
+    opacity: 0.65;
 }
