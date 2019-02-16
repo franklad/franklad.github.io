@@ -2,8 +2,11 @@
   <dictionary name="Frank">
     <words>
       <w>bagherzadeh</w>
+      <w>clearfix</w>
       <w>franklad</w>
       <w>navbar</w>
+      <w>nltk</w>
+      <w>xaml</w>
     </words>
   </dictionary>
 </component>
