@@ -149,15 +149,6 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #343a40;
 }
-.fa-github {
-    color:#343a40;
-}
-.fa-linkedin-in {
-    color: #343a40;
-}
-.fa-envelope {
-    color: #343a40;
-}
 .fa-map-signs {
     color: #78909C;
 }
@@ -183,10 +174,10 @@
     color: #D44638;
 }
 #bolt .fa-bolt {
-    color: #FFB900;
+    color: #f1c40f;
 }
 #bolt:hover .fa-bolt {
-    color: #FF8C00;
+    color: #f39c12;
 }
 
 #source-link .fa-github {
@@ -204,3 +195,30 @@
 #avatar .img-cus{
     opacity: 0.65;
 }
+.social-icon {
+    color: #343a40;
+}
+.site-header .nav-link {
+    position: relative;
+    padding-bottom: 0;
+    margin-bottom: 2px;
+}
+.site-header .nav-link:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    max-width: 100px;
+    height: 2px;
+    left: 0;
+    bottom: -3px;
+    background-color: #f1c40f;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.4s ease-in-out;
+}
+.site-header .nav-link:hover:before {
+    left: 0;
+    visibility: visible;
+    transform: scaleX(1);
+}
+
