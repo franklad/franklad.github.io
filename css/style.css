@@ -225,4 +225,6 @@
 .nav-pills .nav-link.active {
     background-color: transparent;
 }
-
+.project a {
+    color: #343a40;
+}
