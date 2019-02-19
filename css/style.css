@@ -127,6 +127,9 @@
         top:45%;
         left:35%;
     }
+    #swUp {
+        display: block;
+    }
 }
 
 ::-webkit-scrollbar {
@@ -232,4 +235,11 @@
 }
 .project a {
     color: #343a40;
+}
+
+#swUp {
+    display: none;
+    position: relative;
+    bottom: -100%;
+    left: 15%;
 }
