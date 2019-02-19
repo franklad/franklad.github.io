@@ -154,12 +154,15 @@
 }
 .fa-github:hover {
     color:#6e5494;
+    transform: translateY(-5px) scale(1.5,1.5);
 }
 .fa-linkedin-in:hover {
     color: #0077B5;
+    transform: translateY(-5px) scale(1.5,1.5);
 }
 .fa-envelope:hover {
     color: #D44638;
+    transform: translateY(-5px) scale(1.5,1.5);
 }
 .fa-map-signs:hover {
     color: #343a40;
@@ -198,6 +201,9 @@
 }
 .social-icon {
     color: #343a40;
+    transition: all 0.1s ease-in;
+    margin-right: 2px;
+    margin-left: 2px;
 }
 .site-header .nav-link {
     position: relative;
