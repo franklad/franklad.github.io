@@ -85,3 +85,5 @@ fabric.properties
 
 firebase.json
 .firebaserc
+.firebase
+.idea
