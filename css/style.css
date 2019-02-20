@@ -218,6 +218,9 @@
 .devicon-git-plain-wordmark:hover {
     color: #f34f29;
 }
+.devicon-travis-plain-wordmark {
+    color: #DB4545;
+}
 .fa-aws:hover {
     color: #202b3c;
 }
