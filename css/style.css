@@ -89,7 +89,11 @@
 .tab-back{
     background-color: #E0E0E0
 }
-@media screen and (max-width:1024px) {
+
+@media (max-width:1024px) {
+    .lang .social-icon:hover {
+        transform: scale(1.5,1.5);
+    }
     .side-cus{
         position:absolute;
         top:20vh;
@@ -97,7 +101,6 @@
         right:15%;
         padding-bottom:34vh
     }
-
 }
 @media screen and (max-width:767px) {
     .side-cus {
@@ -156,27 +159,15 @@
 }
 .fa-github:hover {
     color:#6e5494;
-    transform: translateY(-5px) scale(1.5,1.5);
 }
 .fa-linkedin-in:hover {
     color: #0077B5;
-    transform: translateY(-5px) scale(1.5,1.5);
 }
 .fa-envelope:hover {
     color: #D44638;
-    transform: translateY(-5px) scale(1.5,1.5);
 }
 .fa-map-signs:hover {
     color: #343a40;
-}
-.fa-github:target {
-    color:#6e5494;
-}
-.fa-linkedin-in:target {
-    color: #0077B5;
-}
-.fa-envelope:target {
-    color: #D44638;
 }
 #bolt .fa-bolt {
     color: rgba(241,196,15, 0.65);
@@ -192,10 +183,49 @@
 #source-link:hover .fa-github {
     color: #6e5494;
 }
+
+
+.devicon-java-plain-wordmark:hover {
+    color: #007396;
+}
+.devicon-python-plain-wordmark:hover {
+    color: #ffde57;
+}
+.devicon-c-line-wordmark:hover {
+    color: #7f8a99;
+}
+.devicon-cplusplus-line-wordmark:hover {
+    color: #649ad2;
+}
+.devicon-csharp-line-wordmark:hover {
+    color: #a078db;
+}
+.devicon-html5-plain-wordmark:hover {
+    color: #e34f26;
+}
+.devicon-css3-plain-wordmark:hover {
+    color: #2162af;
+}
+.devicon-bootstrap-plain-wordmark:hover {
+    color: #563d7c;
+}
+.devicon-nodejs-plain:hover {
+    color: #699f63;
+}
+.devicon-dot-net-plain-wordmark:hover {
+    color: #652076;
+}
+.devicon-git-plain-wordmark:hover {
+    color: #f34f29;
+}
+.fa-aws:hover {
+    color: #202b3c;
+}
+
 #avatar {
     position:fixed;
     bottom: 0;
-    left: 8%;
+    left: 4%;
     z-index: -1;
 }
 #avatar .img-cus{
@@ -206,6 +236,13 @@
     transition: all 0.1s ease-in;
     margin-right: 2px;
     margin-left: 2px;
+}
+.social-icon:hover {
+     transform: translateY(-5px) scale(1.5,1.5);
+}
+.lang .social-icon:hover {
+    transform: scale(1.5,1.5);
+    transition: 0.2s ease-in-out;
 }
 .site-header .nav-link {
     position: relative;
@@ -235,6 +272,7 @@
 }
 .project a {
     color: #343a40;
+    transform: translateY(-5px) scale(1.5,1.5);
 }
 
 #swUp {
@@ -244,11 +282,7 @@
     left: 15%;
 }
 
-.bigIcon {
-    font-size: 200%;
-    margin-right: 2px;
-}
-
-#moveUpText {
-    padding-bottom: -10px;
+.big-icon {
+    font-size: 180%;
+    margin: 3px;
 }
