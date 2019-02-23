@@ -13,7 +13,7 @@ new Chart(document.getElementById("skills"), {
             pointBorderColor: "#fff",
             pointHoverBackgroundColor: ['#007396', '#649ad2', '#62AEB2', '#ffde57', '#CFD8DC', '#e34f26', '#2162af', '#a078db', '#FFEB3B', '#7f8a99', '#699f63'],
             pointHoverBorderColor: "#263238",
-            data: [80, 77, 85, 72, 7, 70, 65, 75, 90, 85, 45]
+            data: [80, 77, 85, 72, 7, 70, 65, 75, 90, 85, 55]
         }]
     },
     options: {
