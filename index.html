@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css?v=1.4.1">
+  <link rel="stylesheet" href="css/style.css?v=1.5.1">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
@@ -14,6 +14,12 @@
   <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
   <title>Frank B.</title>
 </head>
+<script>
+  $(document).ready(function () {
+    $("#side").hide();
+    $("#side").delay(500).fadeIn(100);
+  });
+</script>
 <header class="site-header">
   <nav class="navbar bg-light navbar-light nav-pills navbar-expand-sm fixed-top">
     <div class="container">
@@ -31,22 +37,23 @@
     </div>
   </nav>
 </header>
+
+
 <body>
 <div class="container row align-items-center">
   <div class="content cus">
     <div class=" align-items-sm-center align-self-center text-cus">
-      <h1 class="fadeInUp animated" style="animation-delay: 0.3s"><strong>Hi!</strong></h1>
-      <h1 class="fadeInUp animated" style="animation-delay: 0.4s">My name is Frank,</h1>
-      <h1 class="fadeInUp animated text-muted" style="animation-delay: 0.6s"><small>I'm a:</small></h1>
+      <h1 class="fadeInUp animated" style="animation-delay: 0.2s"><strong>Hi!</strong></h1>
+      <h1 class="fadeInUp animated" style="animation-delay: 0.3s">My name is Frank,</h1>
+      <h1 class="fadeInUp animated text-muted" style="animation-delay: 0.5s"><small>I'm a:</small></h1>
     </div>
-    <div class="text-center fadeIn animated" style="animation-delay: 0.7s" id="avatar">
+    <div class="text-center fadeIn animated" style="animation-delay: 0.4s" id="avatar">
       <img src="image/avatar.png" class="rounded img-cus" alt="avatar-d">
     </div>
     <div id="swUp"><i class="fas fa-angle-double-up fa-2x"></i></div>
-  </div>
+  </div> <!-- RIGHT SIDE -->
 
-
-  <div class="content side-cus fadeInUp animated" style="animation-delay: 0.8s">
+  <div class="side-cus fadeInUp animated" id="side"> <!-- LEFT SIDE -->
     <p class="lead mt-5">Computer science student <strong>"Super nerd"</strong> who loves programming, uses Linux and enjoys to
       customize all of the development environment. Interested in devising a better problem-solving method for challenging tasks, and learning new
       technologies and tools.
@@ -54,7 +61,7 @@
     <p class="lead">
       I have experience in developing and using different languages and technologies such as:
     </p>
-    <p class="lead lang">
+    <p class="lead lang  fadeInUp animated" style="animation-delay: 0.5s">
       <i class="big-icon social-icon fab devicon-java-plain-wordmark"></i>
       <i class="big-icon social-icon fab devicon-python-plain-wordmark"></i>
       <i class="big-icon social-icon fab devicon-c-line-wordmark"></i>
@@ -69,6 +76,14 @@
       <i class="big-icon social-icon fab devicon-travis-plain-wordmark"></i>
       <i class="big-icon social-icon fab fa-aws"></i>
     </p>
+
+    <div class="row">
+      <iframe class="chartjs-hidden-iframe" tabindex="-1" style="display: block; overflow: hidden; border: 0; margin: 0; top: 0; left: 0; bottom: 0; right: 0; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;"></iframe>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+      <canvas id="skills" height="550" width="550" style="display: block; max-width: 550px; max-height: 550px"></canvas>
+      <script src="js/skillsChart.js"></script>
+    </div>
+
     <p class="lead mt-5"> You can reach me on :
       <a href="https://github.com/franklad" data-toggle="tooltip" data-placement="bottom" title="Github" target="_blank" class="text-info no-underline mr-1 ml-2">
         <i class="social-icon fab fa-github"></i>
@@ -81,9 +96,10 @@
       </a>
     </p>
   </div>
-
 </div><!-- content container -->
-<script src="js/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/skillsChart.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 </body>

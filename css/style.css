@@ -90,19 +90,8 @@
     background-color: #E0E0E0
 }
 
-@media (max-width:1024px) {
-    .lang .social-icon:hover {
-        transform: scale(1.5,1.5);
-    }
-    .side-cus{
-        position:absolute;
-        top:20vh;
-        left:65%;
-        right:15%;
-        padding-bottom:34vh;
-    }
-}
-@media screen and (max-width:767px) {
+
+@media screen and (max-width:1024px) {
     .side-cus {
         top:90vh;
         left: 0;
@@ -128,7 +117,7 @@
     #avatar {
         position: fixed;
         top:45%;
-        left:35%;
+        left:15%;
     }
     #swUp {
         display: block;
