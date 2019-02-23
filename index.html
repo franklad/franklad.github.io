@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css?v=1.5.1">
+  <link rel="stylesheet" href="css/style.css?v=1.5.2">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
@@ -16,8 +16,9 @@
 </head>
 <script>
   $(document).ready(function () {
-    $("#side").hide();
-    $("#side").delay(500).fadeIn(100);
+    const side = $("#side");
+    side.hide();
+    side.delay(500).fadeIn(100);
   });
 </script>
 <header class="site-header">
@@ -86,7 +87,7 @@
 
     <p class="lead mt-5"> You can reach me on :
       <a href="https://github.com/franklad" data-toggle="tooltip" data-placement="bottom" title="Github" target="_blank" class="text-info no-underline mr-1 ml-2">
-        <i class="social-icon fab fa-github"></i>
+        <i class="social-icon hvr-bob fab fa-github"></i>
       </a>
       <a href="https://www.linkedin.com/in/franklad/" data-toggle="tooltip" data-placement="bottom" title="Linkedin" target="_blank" class="text-info no-underline mr-1">
         <i class="social-icon fab fa-linkedin-in"></i>
