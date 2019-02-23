@@ -7,6 +7,8 @@ new Chart(document.getElementById("skills"), {
             backgroundColor: "rgba(0, 183, 195,0.2)",
             borderColor: "#00B7C3",
             fill: true,
+            pointRadius: 4,
+            pointHoverRadius: 6,
             pointBackgroundColor: "#038387",
             pointBorderColor: "#fff",
             pointHoverBackgroundColor: ['#007396', '#649ad2', '#62AEB2', '#ffde57', '#CFD8DC', '#e34f26', '#2162af', '#a078db', '#FFEB3B', '#7f8a99', '#699f63'],
