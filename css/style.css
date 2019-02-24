@@ -117,7 +117,7 @@
     #avatar {
         position: fixed;
         top:45%;
-        left:15%;
+        padding-left: 10vw;
     }
     #swUp {
         display: block;
@@ -154,6 +154,9 @@
 }
 .fa-envelope:hover {
     color: #D44638;
+}
+.fa-spotify:hover {
+    color: #1DB954;
 }
 .fa-map-signs:hover {
     color: #343a40;
