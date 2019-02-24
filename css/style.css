@@ -116,11 +116,9 @@
     }
     #avatar {
         position: fixed;
-        top:45%;
+        top:42%;
         padding-left: 10vw;
-    }
-    #swUp {
-        display: block;
+        margin-left: -10px;
     }
 }
 
@@ -145,6 +143,9 @@
 }
 .fa-map-signs {
     color: #78909C;
+}
+.fa-angle-double-up {
+    color: rgba(52, 58, 64, 0.8);
 }
 .fa-github:hover {
     color:#6e5494;
@@ -273,12 +274,6 @@
     transform: translateY(-5px) scale(1.5,1.5);
 }
 
-#swUp {
-    display: none;
-    position: relative;
-    bottom: -100%;
-    left: 15%;
-}
 
 .big-icon {
     font-size: 180%;
@@ -313,4 +308,13 @@ a:hover .arrow:before,
 .arrow:hover:before {
     transform: translateX(-1em) translateZ(0);
     opacity: 1;
+}
+
+.on-phone {
+    display: none;
+    position: relative;
+    height: 300px;
+    width: 300px;
+    padding-top: -90vh;
+    left: 15%;
 }
