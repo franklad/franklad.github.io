@@ -54,9 +54,11 @@
             </div>
             <input type="text" class="form-control" placeholder="Click on Generate..." id="pass-gen" readonly>
             <div class="input-group-append">
-              <button onclick="copyText()" class="btn btn-outline-success btn-sm" type="button" id="copy-btn" data-clipboard-target="#pass-gen">Copy</button>
+              <button onclick="copyText()" class="btn btn-outline-success btn-sm tooltip-test" type="button"
+                      id="copy-btn" data-placement="top" title="Tooltip on top">Copy</button>
             </div>
           </div>
+          <div class="mt-1" id="status-box"></div>
         </div>
       </div>
     </div>
@@ -73,7 +75,7 @@
       </button>
       <div class="collapse navbar-collapse" id="nav-tog">
         <div class="navbar-nav justify-content-center container">
-            <a class="nav-link nav-item active" href="projects.html">Projects</a>
+          <a class="nav-link nav-item active" href="projects.html">Projects</a>
         </div>
       </div>
     </div>
@@ -128,7 +130,8 @@
           <dd>• Arduino controlled robot with 77 RPM high torque motors, PWM drivers.</dd>
           <dd>• Added multiple functions including PID line following, edge detection, object/obstacle recognition and fire detection/suppression</dd>
           <dd><small class="text-muted font-italic">- September 2018 - December 2018</small></dd>
-        </dl>      </section>
+        </dl>
+      </section>
     </div>
   </section>
   <p class="fadeIn animated" style="animation-delay: 1s"><mark><small>Projects' source codes are available on Github under : </small>
@@ -137,8 +140,8 @@
       franklad</a></mark></p>
 </div><!-- content container -->
 <script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/main.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

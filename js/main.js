@@ -2,6 +2,7 @@ let firstTime = true;
 let slider = document.getElementById("Range");
 let output = document.getElementById("val");
 let label = document.getElementById("label");
+let stat = document.getElementById("status-box");
 
 let strLowercase = "abcdefghijklmnopqrstuvwxyz";
 let strUppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -41,6 +42,7 @@ function generate() {
 
 
     if (Lowercase.checked || Uppercase.checked || Numeric.checked || Special.checked) {
+        stat.innerHTML = '';
         if (Lowercase.checked === true) strCharSet += strLowercase;
         if (Uppercase.checked === true) strCharSet += strUppercase;
         if (Numeric.checked === true) strCharSet += strNumeric;
@@ -60,15 +62,16 @@ function generate() {
         let textBox = document.getElementById("pass-gen");
         textBox.value = retStr;
         firstTime = false;
-    }
+    } else stat.innerHTML = '<div class="alert alert-danger"><strong>Error!</strong> Select at least one character set.</div>';
 }
 
 function copyText() {
+    let text = document.getElementById("pass-gen");
+    let success_block = '<div class="alert alert-success"><strong>Copied!</strong> Your password is copied to the clipboard.</div>';
+    let danger_block = '<div class="alert alert-danger"><strong>Error!</strong> Press on Generate button for a new password.</div>';
     if (!firstTime) {
-        let text = document.getElementById("pass-gen");
         text.select();
         document.execCommand("copy");
-        alert("Password copied!");
-    } else alert("Password is not generated!");
+        stat.innerHTML = success_block;
+    } else stat.innerHTML = danger_block;
 }
-
