@@ -318,3 +318,40 @@ a:hover .arrow:before,
     padding-top: -90vh;
     left: 15%;
 }
+.slide-container {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 4px;
+    border-radius: 5px;
+    background: #95a5a6;
+    outline: none;
+    opacity: 0.8;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #2c3e50;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #2c3e50;
+    cursor: pointer;
+}
