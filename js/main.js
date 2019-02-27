@@ -18,18 +18,17 @@ slider.oninput = function() {
 };
 
 function strength (val) {
-    if (val > 16) {
-        label.innerHTML = " Strong";
+    if (val > 24) {
+        label.innerHTML = '<strong> Strong</strong>';
         label.style.color = '#27ae60'
-    } else if (val > 12) {
-        label.innerHTML = " Good";
+    } else if (val > 16) {
+        label.innerHTML = '<strong> Good</strong>';
         label.style.color = '#e67e22'
     } else {
-        label.innerHTML = " Weak";
+        label.innerHTML = '<strong> Weak</strong>';
         label.style.color = '#c0392b'
     }
 }
-
 
 function generate() {
 
