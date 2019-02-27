@@ -64,6 +64,23 @@
     </div>
   </div>
 </div> <!--- Password Gen Modal --->
+<div class="modal fade" id="weather-bot-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Weather Bot</h5>
+        <button type="button" class="close no-outline" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div> <!--- Weather Bot Modal --->
 <header class="site-header">
   <nav class="navbar bg-light navbar-light nav-pills navbar-expand-sm fixed-top">
     <div class="container fadeInUp animated" style="animation-delay: 0.2s">
@@ -90,7 +107,7 @@
       <section class="col-sm-6 fadeIn animated" style="animation-delay: 0.4s">
         <h4><code>Software Development</code></h4>
         <dl class="fadeIn animated panel" style="animation-delay: 0.7s"> <!--  SOFTWARE PROJECTS -->
-          <dt class="arrow"><a href="#" class="no-underline">Weather Bot </a><small><kbd class="fadeIn animated" style="animation-delay: 1s">Python, JSON</kbd></small></dt>
+          <dt class="arrow"><a data-toggle="modal" href="#weather-bot-modal" class="no-underline">Weather Bot </a><small><kbd class="fadeIn animated" style="animation-delay: 1s">Python, JSON</kbd></small></dt>
           <dd>• Created a responsive weather bot using Python and designed and attached elements such as latest satellite image, flag and
             other elements using JSON and different APIs.</dd>
           <dd>• Added NLP and auto-correct functionality to recognise a typo in the city name made by the user using Levenshtein Algorithm and python
