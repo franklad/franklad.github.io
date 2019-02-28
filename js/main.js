@@ -63,9 +63,7 @@ function generate() {
         firstTime = false;
     } else stat.innerHTML = '<div class="alert alert-danger"><strong>Error!</strong> Select at least one character set.</div>';
 }
-function isIOS() {
-    return navigator.userAgent.match(/ipad|iphone/i);
-}
+
 function copyText() {
     let text = document.getElementById("pass-gen");
     let success_block = '<div class="alert alert-success"><strong>Copied!</strong> Your password is copied to the clipboard.</div>';
