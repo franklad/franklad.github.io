@@ -63,13 +63,23 @@ function generate() {
         firstTime = false;
     } else stat.innerHTML = '<div class="alert alert-danger"><strong>Error!</strong> Select at least one character set.</div>';
 }
-
+function isIOS() {
+    return navigator.userAgent.match(/ipad|iphone/i);
+}
 function copyText() {
     let text = document.getElementById("pass-gen");
     let success_block = '<div class="alert alert-success"><strong>Copied!</strong> Your password is copied to the clipboard.</div>';
     let danger_block = '<div class="alert alert-danger"><strong>Error!</strong> Press on Generate button for a new password.</div>';
     if (!firstTime) {
-        text.select();
+        let range, selection;
+        if (isIOS()){
+            range = document.createRange();
+            range.selectNodeContents(text);
+            selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            text.setSelectionRange(0, 999999);
+        } else text.select();
         document.execCommand("copy");
         stat.innerHTML = success_block;
     } else stat.innerHTML = danger_block;
