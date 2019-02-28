@@ -71,15 +71,7 @@ function copyText() {
     let success_block = '<div class="alert alert-success"><strong>Copied!</strong> Your password is copied to the clipboard.</div>';
     let danger_block = '<div class="alert alert-danger"><strong>Error!</strong> Press on Generate button for a new password.</div>';
     if (!firstTime) {
-        let range, selection;
-        if (isIOS()){
-            range = document.createRange();
-            range.selectNodeContents(text);
-            selection = window.getSelection();
-            selection.removeAllRanges();
-            selection.addRange(range);
-            text.setSelectionRange(0, 999999);
-        } else text.select();
+        text.select();
         document.execCommand("copy");
         stat.innerHTML = success_block;
     } else stat.innerHTML = danger_block;
