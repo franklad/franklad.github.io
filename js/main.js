@@ -74,3 +74,32 @@ function copyText() {
         stat.innerHTML = success_block;
     } else stat.innerHTML = danger_block;
 }
+
+const MAP_API_KEY = '';
+const WEATHER_API_KEY = '';
+let address = '', lat = '', lng = '', unit = '';
+
+function weatherQ() {
+    address = document.getElementById("address-bar").value;
+    let dropdown = document.getElementById("inputUnits");
+    unit = dropdown.options[dropdown.selectedIndex].value;
+    const stat = document.getElementById("status-box-weather");
+    if(address.length === 0) {
+        stat.innerHTML = 'Enter an <strong>address!</strong>';
+        stat.style.color = '#ef5350';
+    } else {
+        let mapURL = 'https://maps.googleapis.com/maps/api/geocode/json?address=' + address + '&key=' + MAP_API_KEY;
+        console.log(mapURL);
+        console.log(unit);
+        $.get(mapURL, function (data) {
+            let coord = data.results[0].geometry.location;
+            lat = coord.lat.toFixed(4);
+            lng = coord.lng.toFixed(4);
+        });
+        let weatherURL = 'https://api.darksky.net/forecast/' + WEATHER_API_KEY + '/' + lat + ',' + lng + '?units=' + unit;
+        $.get(weatherURL, function (data) {
+
+        });
+    }
+}
+

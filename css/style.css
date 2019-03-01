@@ -147,6 +147,9 @@
 .fa-angle-double-up {
     color: rgba(52, 58, 64, 0.8);
 }
+.fa-map-marker-alt {
+    color: #FF7043;
+}
 .fa-github:hover {
     color:#6e5494;
 }
@@ -354,4 +357,8 @@ a:hover .arrow:before,
     border-radius: 50%;
     background: #2c3e50;
     cursor: pointer;
+}
+.btn:focus {
+    border: none;
+    box-shadow: none;
 }

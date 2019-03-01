@@ -64,8 +64,8 @@
     </div>
   </div>
 </div> <!--- Password Gen Modal --->
-<div class="modal fade" id="weather-bot-modal" tabindex="-1" role="dialog">
-  <div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal fade bd-example-modal-lg" id="weather-bot-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Weather Bot</h5>
@@ -74,9 +74,47 @@
         </button>
       </div>
       <div class="modal-body">
-        <div class="container">
-
-        </div>
+        <div class="container row">
+          <div class="input-group mb-3" style="max-width: 580px">
+            <img src="image/powered_by_google_on_white.png" style="height: 18px; margin-top: 10px; margin-right: 10px">
+            <input type="text" class="form-control" id="address-bar" placeholder="Address, zip code, city ..." style="border-radius: 50px; margin-right: 5px">
+            <div class="input-group-append">
+              <button class="btn" onclick="weatherQ()" type="button" style="margin-right: 50px"><i class="fas fa-map-marker-alt"></i></button>
+            </div>
+            <label for="inputUnits" style="margin-top: 7px; margin-right: 8px">Unit: </label>
+            <select class="custom-select" id="inputUnits" style="border-radius: 50px; max-width: 80px">
+              <option value="auto">Auto</option>
+              <option value="ca">CA</option>
+              <option selected value="si">SI</option>
+              <option value="uk2">UK</option>
+              <option value="us">US</option>
+            </select>
+          </div>
+          <div id="status-box-weather" style="margin-left: 20px; margin-top: 7px"></div>
+        </div> <!--- Search Div --->
+        <div class="container row" id="display-div">
+          <div class="col-sm-6">
+            <canvas height="200"></canvas>
+          </div>
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-sm-6">
+                <!---<span><strong>Temperature: </strong>12</span>--->
+              </div>
+              <div class="col-sm-6">
+                <!---<span><strong>Pressure: </strong>12</span>--->
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <!---<span><strong>Humidity: </strong>12</span>--->
+              </div>
+              <div class="col-sm-6">
+                <!---<span><strong>Wind: </strong>12</span> --->
+              </div>
+            </div>
+          </div>
+        </div> <!--- Display Div --->
       </div>
     </div>
   </div>
