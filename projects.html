@@ -67,7 +67,7 @@
 <header class="site-header">
   <nav class="navbar bg-light navbar-light nav-pills navbar-expand-sm fixed-top">
     <div class="container fadeInUp animated" style="animation-delay: 0.2s">
-      <a class="navbar-brand" href="index.html" id="bolt"><i class="fas fa-bolt"></i> Frank B.</a>
+      <a class="navbar-brand" href="index.html" id="bolt"><i class="fas fa-bolt"></i> Frank</a>
       <button class="navbar-toggler" style="border: 0" type="button"
               data-toggle="collapse" data-target="#nav-tog"
               aria-controls="MyTogNav" aria-expanded="false">
@@ -76,6 +76,7 @@
       <div class="collapse navbar-collapse" id="nav-tog">
         <div class="navbar-nav justify-content-center container">
           <a class="nav-link nav-item active" href="projects.html">Projects</a>
+          <a class="nav-link nav-item" href="pdf/resume.pdf" target="_blank">Resume</a>
         </div>
       </div>
     </div>
@@ -88,44 +89,47 @@
     <p class="fadeInUp animated">These are some of the projects that I have worked on: </p>
     <div class="row align-items-baseline no-underline project">
       <section class="col-sm-6 fadeIn animated" style="animation-delay: 0.4s">
-        <h4><code>Software Development</code></h4>
+        <h4><code>Software</code></h4>
         <dl class="fadeIn animated panel" style="animation-delay: 0.7s"> <!--  SOFTWARE PROJECTS -->
-          <dt class="arrow"><a href="#" class="no-underline">Weather Bot </a><small><kbd class="fadeIn animated" style="animation-delay: 1s">Python, JSON</kbd></small></dt>
-          <dd>• Created a responsive weather bot using Python and designed and attached elements such as latest satellite image, flag and
-            other elements using JSON and different APIs such as Google Maps API and Dark Sky API.</dd>
-          <dd>• Added Natural language processing and auto-correct functionality to recognise a typo in the city name made by the user using Levenshtein Algorithm and python
-            libraries including NLTK.</dd>
-          <dd>• This bot is deployed for both Slack and Telegram Messenger, and the web version will soon be available on this website.</dd>
-          <dd><small class="text-muted font-italic">- December 2018</small></dd>
+          <dt class="arrow"><a href="#" class="no-underline">Stonx </a><small><kbd class="fadeIn animated" style="animation-delay: 1s">Go, Python, MySQL, Docker</kbd></small></dt>
+          <dd>• Created a responsive stock market and watchlist/portfolio manager server using Go with IEX API.</dd>
+          <dd>• Created super rich clients using python to connect different messaging apps to the server</dd>
+          <dd>• This bot is deployed for both Slack and Telegram Messenger.</dd>
+          <dd><small class="text-muted font-italic">- June 2020</small></dd>
         </dl>
         <dl class="fadeIn animated" style="animation-delay: 0.7s"> <!--  SOFTWARE PROJECTS -->
-          <dt class="arrow"><a data-toggle="modal" href="#password-gen-modal" class="no-underline">Password Generator </a><small><kbd class="fadeIn animated" style="animation-delay: 1s">C#, XAML (Native) and JavaScript (WebApp)</kbd></small></dt>
-          <dd>• Built a native password generator and storage app using C# and UI design using XAML</dd>
-          <dd>• Capable of creating passwords from 4 to 64 characters with ability to customise the character set.</dd>
-          <dd>• Generated passwords as well as previously created can be added to a database with their respective username and login URL.</dd>
-          <dd>• Created the web version of this project using JavaScript. It can be used by clicking on the project name.</dd>
-          <dd><small class="text-muted font-italic">- January 2019</small></dd>
+          <dt class="arrow"><a href="#" class="no-underline">cv-cli </a><small><kbd class="fadeIn animated" style="animation-delay: 1s">Go, Postgres, GRPC, React</kbd></small></dt>
+          <dd>• Developed an extensible resume builder based on ’jsonResume’ schema using Go, Postgres and latex template.</dd>
+          <dd>• Full API support with data storage and on-the-fly resume generation.</dd>
+          <dd><small class="text-muted font-italic">- May 2020</small></dd>
+        </dl>
+        <dl class="fadeIn animated panel" style="animation-delay: 0.7s"> <!--  SOFTWARE PROJECTS -->
+          <dt class="arrow"><a href="#" class="no-underline">Voter.io </a><small><kbd class="fadeIn animated" style="animation-delay: 1s">Go, Kubernetes, Libsodium, React</kbd></small></dt>
+          <dd>• Created a fully encrypted and anonymous voting platform that stores signed voting data similar to a blockchain.</dd>
+          <dd>• Developed a UI using React to read voter QR codes, take votes and streamed live results with a millisecond delay.</dd>
+          <dd><small class="text-muted font-italic">- September 2019 - October 2019</small></dd>
         </dl>
         <dl class="fadeIn animated" style="animation-delay: 0.7s"> <!--  SOFTWARE PROJECTS -->
           <dt class="arrow"><a href="https://franklad.com" class="no-underline">Personal Website </a><small><kbd class="fadeIn animated" style="animation-delay: 1s">HTML, CSS, JavaScript</kbd></small></dt>
-          <dd>• Currently working on a responsive website (this website :)) using Bootstrap.</dd>
-          <dd>• Deployed the website on github pages, then migrated to Firebase.</dd>
-          <dd><small class="text-muted font-italic">- January 2019 - present</small></dd>
-        </dl>
-        <dl class="fadeIn animated" style="animation-delay: 0.7s"> <!--  SOFTWARE PROJECTS -->
-          <dt class="arrow"><a href="#" class="no-underline">Smart Fridge Application </a><small><kbd class="fadeIn animated" style="animation-delay: 1s">Visual Basic, .NET framework</kbd></small></dt>
-          <dd>• Worked in a team of total 3 persons to complete this project.</dd>
-          <dd>• Designed a modern and responsive user interface for a Smart Fridge application with database support
-            for storing recipes, grocery lists and restricted items.
-          </dd>
-          <dd>
-            • This app can also communicate and push notification to registered phones.
-          </dd>
-          <dd><small class="text-muted font-italic">- September 2018 - December 2018</small></dd>
+          <dd>• Continuously working on a responsive and lightweight website (this website :)) using Bootstrap.</dd>
+          <dd>• Deployed on github pages.</dd>
+          <dd><small class="text-muted font-italic">- December 2019</small></dd>
         </dl>
       </section>
       <section class="col-sm-6 fadeIn animated" style="animation-delay: 0.4s;">
         <h4><code>Electronic/Robotic</code></h4>
+        <dl class="fadeIn animated" style="animation-delay: 0.7s"> <!--  HARDWARE PROJECTS -->
+          <dt class="arrow"><a href="#" class="no-underline">Raspberry Pi Kubernetes cluster </a><small><kbd class="fadeIn animated" style="animation-delay: 1s">Kubernetes, Docker, Raspberry Pi</kbd></small></dt>
+          <dd>• Created an in-house 8 node Raspberry Pi Kubernetes cluster and deployed services such as a git server (gitlab), password manager, and a VPN in addition to hosting my own personal and school projects to test and demo (acting as a staging server).</dd>
+          <dd>• Main purpose of this project was to familiarise myself with deploying and maintaining infrastructure and services and to have my own platform for personal projects and prototypes.</dd>
+          <dd><small class="text-muted font-italic">- September 2018 - December 2018</small></dd>
+        </dl>
+        <dl class="fadeIn animated" style="animation-delay: 0.7s"> <!--  HARDWARE PROJECTS -->
+          <dt class="arrow"><a href="#" class="no-underline">Gyroscope glove </a><small><kbd class="fadeIn animated" style="animation-delay: 1s">Python, Raspberry Pi, GRPC and Angular</kbd></small></dt>
+          <dd>• Streamed raw data from two gyroscopes over WiFi using ESP8266 to a Raspberry Pi gateway server and then to the main server.</dd>
+          <dd>• Developed a user interface using Angular and displayed graphs representing movement in x, y, z axis as well as the ability to re-calibrate each sensor.</dd>
+          <dd><small class="text-muted font-italic">- July 2019</small></dd>
+        </dl>
         <dl class="fadeIn animated" style="animation-delay: 0.7s"> <!--  HARDWARE PROJECTS -->
           <dt class="arrow"><a href="#" class="no-underline">Autonomous Mobile Robot Project </a><small><kbd class="fadeIn animated" style="animation-delay: 1s">C++</kbd></small></dt>
           <dd>• Arduino controlled robot with 77 RPM high torque motors, PWM drivers.</dd>
