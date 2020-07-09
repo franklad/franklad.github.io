@@ -1,19 +1,37 @@
 new Chart(document.getElementById("skills"), {
     type: 'radar',
     data: {
-        labels: ['Java', 'C/C++', 'Arduino', 'Python','Procrastination', 'HTML', 'CSS', 'C#', 'Motivation', 'Robotics', 'Node.JS'],
+        labels:
+            [
+                'Go',
+                'Python',
+                'C/C++',
+                'C#',
+                'Kubernetes',
+                'Robotics',
+                'AI/ML'
+            ],
         datasets: [{
             label: "Power",
-            backgroundColor: "rgba(0, 183, 195,0.2)",
-            borderColor: "#00B7C3",
+            backgroundColor: "rgba(0,183,195,0.16)",
+            borderColor: "rgba(0,183,195,0.63)",
             fill: true,
             pointRadius: 4,
             pointHoverRadius: 6,
             pointBackgroundColor: "#038387",
             pointBorderColor: "#fff",
-            pointHoverBackgroundColor: ['#007396', '#649ad2', '#62AEB2', '#ffde57', '#CFD8DC', '#e34f26', '#2162af', '#a078db', '#FFEB3B', '#7f8a99', '#699f63'],
+            pointHoverBackgroundColor:
+                [
+                    '#00ADD8',
+                    '#ffde57',
+                    '#9dc1c1',
+                    '#7113a7',
+                    '#346de5',
+                    '#7f8a99',
+                    '#699f63'
+                ],
             pointHoverBorderColor: "#263238",
-            data: [80, 77, 85, 72, 7, 70, 65, 75, 90, 85, 55]
+            data: [90, 80, 87, 85, 80, 90, 75]
         }]
     },
     options: {
@@ -24,10 +42,10 @@ new Chart(document.getElementById("skills"), {
             pointLabels: {fontSize: 14},
         },
         layout: {
-          padding: {
-              left: 7,
-              right: 7
-          }
+            padding: {
+                left: 7,
+                right: 7
+            }
         },
         scaleFontSize: 0,
         legend: {display: false},

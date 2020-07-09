@@ -1,46 +1,47 @@
 @keyframes fadeInUp {
     from {
-        transform: translate3d(0,12px,0)
+        transform: translate3d(0, 12px, 0)
     }
 
     to {
-        transform: translate3d(0,0,0);
+        transform: translate3d(0, 0, 0);
         opacity: 1
     }
 }
 
 @-webkit-keyframes fadeInUp {
     from {
-        transform: translate3d(0,12px,0)
+        transform: translate3d(0, 12px, 0)
     }
 
     to {
-        transform: translate3d(0,0,0);
+        transform: translate3d(0, 0, 0);
         opacity: 1
     }
 }
 
 @keyframes fadeIn {
     from {
-        transform: translate3d(0,1px,0)
+        transform: translate3d(0, 1px, 0)
     }
 
     to {
-        transform: translate3d(0,0,0);
+        transform: translate3d(0, 0, 0);
         opacity: 1
     }
 }
 
 @-webkit-keyframes fadeIn {
     from {
-        transform: translate3d(0,1px,0)
+        transform: translate3d(0, 1px, 0)
     }
 
     to {
-        transform: translate3d(0,0,0);
+        transform: translate3d(0, 0, 0);
         opacity: 1
     }
 }
+
 .animated {
     animation-duration: 1.5s;
     animation-fill-mode: both;
@@ -57,66 +58,76 @@
     animation-name: fadeInUp;
     -webkit-animation-name: fadeInUp;
 }
+
 .fadeIn {
     opacity: 0;
     animation-name: fadeIn;
     -webkit-animation-name: fadeIn;
 }
+
 .no-underline {
     text-decoration: none !important
 }
+
 .marg-cus {
     margin-top: 5rem !important;
 }
 
-.cus{
-    position:fixed;
-    top:24%;
-    left:12%
+.cus {
+    position: fixed;
+    top: 24%;
+    left: 12%
 }
-.text-cus{
-    position:relative;
-    display:block;
-    overflow:hidden
+
+.text-cus {
+    position: relative;
+    display: block;
+    overflow: hidden
 }
-.side-cus{
-    position:absolute;
-    top:20vh;
-    left:50%;
-    right:15%;
-    padding-bottom:34vh
+
+.side-cus {
+    position: absolute;
+    top: 20vh;
+    left: 50%;
+    right: 15%;
+    padding-bottom: 34vh
 }
-.tab-back{
+
+.tab-back {
     background-color: #E0E0E0
 }
 
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
     .side-cus {
-        top:90vh;
+        top: 90vh;
         left: 0;
         right: 0;
         background: #fff;
         padding: 15%
     }
-    .cus{
-        position:fixed;
+
+    .cus {
+        position: fixed;
         margin-left: -12px;
-        top:40%;
-        left:40%
+        top: 40%;
+        left: 40%
     }
-    .tab-back{
+
+    .tab-back {
         background-color: transparent;
     }
-    #avatar .img-cus{
+
+    #avatar .img-cus {
         height: auto;
         width: auto;
         max-width: 100px;
         max-height: 100px;
     }
+
     #avatar {
         position: fixed;
-        top:42%;
+        top: 42%;
         padding-left: 10vw;
         margin-left: -10px;
     }
@@ -141,34 +152,44 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #343a40;
 }
+
 .fa-map-signs {
     color: #78909C;
 }
+
 .fa-angle-double-up {
     color: rgba(52, 58, 64, 0.8);
 }
+
 .fa-github:hover {
-    color:#6e5494;
+    color: #6e5494;
 }
+
 .fa-linkedin-in:hover {
     color: #0077B5;
 }
+
 .fa-envelope:hover {
     color: #D44638;
 }
+
 .fa-spotify:hover {
     color: #1DB954;
 }
+
 .fa-map-signs:hover {
     color: #343a40;
 }
+
 #bolt .fa-bolt {
     color: #FDD835;
-    transition: 0.1s ease-out;
+    transition: 0.2s ease-out;
 }
+
 #bolt:hover .fa-bolt {
     color: #FBC02D;
-    transition: 0.1s ease-in;
+    transform: translateY(-5px) scale(1.3, 1.3);
+    transition: 0.2s ease-in;
 }
 
 #source-link .fa-github {
@@ -183,71 +204,87 @@
 .devicon-java-plain-wordmark:hover {
     color: #007396;
 }
+
 .devicon-python-plain-wordmark:hover {
     color: #ffde57;
 }
+
 .devicon-c-line-wordmark:hover {
     color: #7f8a99;
 }
+
 .devicon-cplusplus-line-wordmark:hover {
     color: #649ad2;
 }
+
 .devicon-csharp-line-wordmark:hover {
     color: #a078db;
 }
+
 .devicon-html5-plain-wordmark:hover {
     color: #e34f26;
 }
+
 .devicon-css3-plain-wordmark:hover {
     color: #2162af;
 }
+
 .devicon-bootstrap-plain-wordmark:hover {
     color: #563d7c;
 }
+
 .devicon-nodejs-plain:hover {
     color: #699f63;
 }
+
 .devicon-dot-net-plain-wordmark:hover {
     color: #652076;
 }
+
 .devicon-git-plain-wordmark:hover {
     color: #f34f29;
 }
+
 .devicon-travis-plain-wordmark:hover {
     color: #DB4545;
 }
+
 .fa-aws:hover {
     color: #202b3c;
 }
 
 #avatar {
-    position:fixed;
+    position: fixed;
     bottom: 0;
     left: 4%;
     z-index: -1;
 }
-#avatar .img-cus{
+
+#avatar .img-cus {
     opacity: 0.55;
 }
+
 .social-icon {
     color: #343a40;
-    transition: all 0.3s ease-out;
+    transition: all 0.4s ease-out;
     margin-right: 2px;
     margin-left: 2px;
+    filter: grayscale(50%);
 }
+
 .social-icon:hover {
-     transform: translateY(-5px) scale(1.5,1.5);
-     transition: all 0.1s ease-in;
+    transform: translateY(-5px) scale(1.3, 1.3);
+    transition: all 0.2s ease-in;
+    filter: grayscale(0%);
+
 }
-.lang .social-icon:hover {
-    transform: scale(1.5,1.5);
-    transition: 0.2s ease-in;
-}
+
 .site-header .nav-link {
     position: relative;
     padding-bottom: 0;
     margin-bottom: 2px;
 }
+
 .site-header .nav-link:before {
     content: '';
     position: absolute;
@@ -261,17 +298,20 @@
     transform: scaleX(0);
     transition: all 0.4s ease-in-out;
 }
+
 .site-header .nav-link:hover:before {
     left: 0;
     visibility: visible;
     transform: scaleX(1);
 }
+
 .nav-pills .nav-link.active {
     background-color: transparent;
 }
+
 .project a {
     color: #343a40;
-    transform: translateY(-5px) scale(1.5,1.5);
+    transform: translateY(-5px) scale(1.5, 1.5);
 }
 
 
@@ -318,6 +358,7 @@ a:hover .arrow:before,
     padding-top: -90vh;
     left: 15%;
 }
+
 .slide-container {
     width: 100%;
 }
@@ -354,4 +395,23 @@ a:hover .arrow:before,
     border-radius: 50%;
     background: #2c3e50;
     cursor: pointer;
+}
+
+.dev-icon {
+    width: 55px;
+    height: 55px;
+}
+
+.dev-block {
+    margin: 10px;
+    float: left;
+}
+
+.lang {
+    animation-delay: 0.5s;
+    margin: 30px
+}
+
+.nav-item {
+    margin-right: 50px;
 }
