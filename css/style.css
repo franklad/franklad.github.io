@@ -415,3 +415,8 @@ a:hover .arrow:before,
 .nav-item {
     margin-right: 50px;
 }
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
