@@ -1,165 +1,67 @@
 <!---
-      ___           ___           ___           ___           ___           ___       ___           ___
-     /\  \         /\  \         /\  \         /\__\         /\__\         /\__\     /\  \         /\  \
-    /::\  \       /::\  \       /::\  \       /::|  |       /:/  /        /:/  /    /::\  \       /::\  \
-   /:/\:\  \     /:/\:\  \     /:/\:\  \     /:|:|  |      /:/__/        /:/  /    /:/\:\  \     /:/\:\  \
-  /::\~\:\  \   /::\~\:\  \   /::\~\:\  \   /:/|:|  |__   /::\__\____   /:/  /    /::\~\:\  \   /:/  \:\__\
- /:/\:\ \:\__\ /:/\:\ \:\__\ /:/\:\ \:\__\ /:/ |:| /\__\ /:/\:::::\__\ /:/__/    /:/\:\ \:\__\ /:/__/ \:|__|
- \/__\:\ \/__/ \/_|::\/:/  / \/__\:\/:/  / \/__|:|/:/  / \/_|:|~~|~    \:\  \    \/__\:\/:/  / \:\  \ /:/  /
-      \:\__\      |:|::/  /       \::/  /      |:/:/  /     |:|  |      \:\  \        \::/  /   \:\  /:/  /
-       \/__/      |:|\/__/        /:/  /       |::/  /      |:|  |       \:\  \       /:/  /     \:\/:/  /
-                  |:|  |         /:/  /        /:/  /       |:|  |        \:\__\     /:/  /       \::/__/
-                   \|__|         \/__/         \/__/         \|__|         \/__/     \/__/         ~~
+      ___           ___           ___           ___           ___
+     /\  \         /\  \         /\  \         /\__\         /\__\
+    /::\  \       /::\  \       /::\  \       /::|  |       /:/  /
+   /:/\:\  \     /:/\:\  \     /:/\:\  \     /:|:|  |      /:/__/
+  /::\~\:\  \   /::\~\:\  \   /::\~\:\  \   /:/|:|  |__   /::\__\____
+ /:/\:\ \:\__\ /:/\:\ \:\__\ /:/\:\ \:\__\ /:/ |:| /\__\ /:/\:::::\__\
+ \/__\:\ \/__/ \/_|::\/:/  / \/__\:\/:/  / \/__|:|/:/  / \/_|:|~~|~
+      \:\__\      |:|::/  /       \::/  /      |:/:/  /     |:|  |
+       \/__/      |:|\/__/        /:/  /       |::/  /      |:|  |
+                  |:|  |         /:/  /        /:/  /       |:|  |
+                   \|__|         \/__/         \/__/         \|__|
 --->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css?v=1.6">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-  <link rel="icon" type="image/png" href="assets/favicon.ico">
-  <title>Projects</title>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173122815-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-173122815-1');
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <title>frank b.</title>
 </head>
-<div class="modal fade" id="password-gen-modal" tabindex="-1" role="dialog">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Password Generator</h5>
-        <button type="button" class="close no-outline" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="container">
-          <div class="form-group">
-            <div><label><input type="checkbox" id="lowercase"> Lowercase Characters (i.e. abcd)</label></div>
-            <div><label><input type="checkbox" id="uppercase"> Uppercase Characters (i.e. ABCD)</label></div>
-            <div><label><input type="checkbox" id="numeric"> Numeric Characters (i.e. 1234)</label></div>
-            <div><label><input type="checkbox" id="special"> Special Characters (i.e. !@#$)</label></div>
-          </div>
-          <div class="slide-container mt-1">
-            <label for="Range"></label><input type="range" min="4" max="64" value="8" class="slider" id="Range">
-            <p style="margin-top: 10px">Length: <span id="val"></span><span id="label"></span></p>
-          </div>
-          <div class="input-group mb-3 mt-1">
-            <div class="input-group-prepend">
-              <button onclick="generate()" class="btn btn-secondary btn-sm" type="button">Generate</button>
-            </div>
-            <input type="text" class="form-control" placeholder="Click on Generate..." id="pass-gen" readonly>
-            <div class="input-group-append">
-              <button onclick="copyText()" class="btn btn-outline-success btn-sm tooltip-test" type="button"
-                      id="copy-btn" data-placement="top" title="Tooltip on top">Copy</button>
-            </div>
-          </div>
-          <div class="mt-1" id="status-box"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> <!--- Password Gen Modal --->
-<header class="site-header">
-  <nav class="navbar bg-light navbar-light nav-pills navbar-expand-sm fixed-top">
-    <div class="container fadeInUp animated" style="animation-delay: 0.2s">
-      <a class="navbar-brand" href="index.html" id="bolt"><i class="fas fa-bolt"></i> Frank</a>
-      <button class="navbar-toggler" style="border: 0" type="button"
-              data-toggle="collapse" data-target="#nav-tog"
-              aria-controls="MyTogNav" aria-expanded="false">
-        <span><i class="fas fa-map-signs"></i></span>
-      </button>
-      <div class="collapse navbar-collapse" id="nav-tog">
-        <div class="navbar-nav justify-content-center container">
-          <a class="nav-link nav-item active" href="projects.html">Projects</a>
-          <a class="nav-link nav-item" href="media/resume.pdf" target="_blank">Resume</a>
-        </div>
-      </div>
-    </div>
-  </nav>
-</header>
 <body>
-<div class="container pt-4">
-  <section class="content col mt-5">
-    <div class="display-4 fadeInUp animated">Projects</div>
-    <p class="fadeInUp animated">These are some of the projects that I have worked on: </p>
-    <div class="row align-items-baseline no-underline project">
-      <section class="col-sm-6 fadeIn animated" style="animation-delay: 0.4s">
-        <h4><code>Software</code></h4>
-        <dl class="fadeIn animated panel" style="animation-delay: 0.7s"> <!--  SOFTWARE PROJECTS -->
-          <dt class="arrow"><a href="#" class="no-underline">Stonx </a><small><kbd class="fadeIn animated" style="animation-delay: 1s">Go, Python, MySQL, Docker</kbd></small></dt>
-          <dd>• Created a responsive stock market and watchlist/portfolio manager server using Go with IEX API.</dd>
-          <dd>• Created super rich clients using python to connect different messaging apps to the server</dd>
-          <dd>• This bot is deployed for both Slack and Telegram Messenger.</dd>
-          <dd><small class="text-muted font-italic">- June 2020</small></dd>
-        </dl>
-        <dl class="fadeIn animated" style="animation-delay: 0.7s"> <!--  SOFTWARE PROJECTS -->
-          <dt class="arrow"><a href="#" class="no-underline">cv-gen </a><small><kbd class="fadeIn animated" style="animation-delay: 1s">Go, Postgres, GRPC, React</kbd></small></dt>
-          <dd>• Developed a resume builder app based on jsonResume schema using Go in a test driven development style.</dd>
-          <dd>• Full API support (REST/GRPC) with data storage, on-the-fly resume generation and ability to add hooks.</dd>
-          <dd><small class="text-muted font-italic">- May 2020</small></dd>
-        </dl>
-        <dl class="fadeIn animated panel" style="animation-delay: 0.7s"> <!--  SOFTWARE PROJECTS -->
-          <dt class="arrow"><a href="#" class="no-underline">Voter.io </a><small><kbd class="fadeIn animated" style="animation-delay: 1s">Go, Kubernetes, Libsodium, React</kbd></small></dt>
-          <dd>• Created a fully encrypted and anonymous voting platform that stores signed voting data similar to a blockchain.</dd>
-          <dd>• Developed a UI using React to read voter QR codes, take votes and streamed live results with a millisecond delay.</dd>
-          <dd><small class="text-muted font-italic">- September 2019 - October 2019</small></dd>
-        </dl>
-        <dl class="fadeIn animated" style="animation-delay: 0.7s"> <!--  SOFTWARE PROJECTS -->
-          <dt class="arrow"><a href="#" class="no-underline">Ping-Pong Score tracker </a><small><kbd class="fadeIn animated" style="animation-delay: 1s">JavaScript, Go, Swift UI</kbd></small></dt>
-          <dd>• Developed a ping pong match tracker and leaderboard app for iOS.</dd>
-          <dd>• Created a bot for my work's local chat server to register/remove users automatically as they join the channel. (webhooks)</dd>
-          <dd>• One day project at work during our quarterly hackathon</dd>
-          <dd><small class="text-muted font-italic">- December 2019</small></dd>
-        </dl>
-        <dl class="fadeIn animated" style="animation-delay: 0.7s"> <!--  SOFTWARE PROJECTS -->
-          <dt class="arrow"><a href="https://franklad.com" class="no-underline">Personal Website </a><small><kbd class="fadeIn animated" style="animation-delay: 1s">HTML, CSS, JavaScript</kbd></small></dt>
-          <dd>• Continuously working on a responsive and lightweight website (this website :)) using Bootstrap.</dd>
-          <dd>• Deployed on github pages.</dd>
-          <dd><small class="text-muted font-italic">- December 2019</small></dd>
-        </dl>
-      </section>
-      <section class="col-sm-6 fadeIn animated" style="animation-delay: 0.4s;">
-        <h4><code>Electronic/Robotic</code></h4>
-        <dl class="fadeIn animated" style="animation-delay: 0.7s"> <!--  HARDWARE PROJECTS -->
-          <dt class="arrow"><a href="#" class="no-underline">Mini Home Cluster </a><small><kbd class="fadeIn animated" style="animation-delay: 1s">Kubernetes, Docker, Raspberry Pi</kbd></small></dt>
-          <dd>• Created an 8 node Raspberry Pi Kubernetes cluster and deployed services such as gitlab, bitwarden, and OpenVPNin addition to hosting my personal and school projects to test and demo.</dd>
-          <dd>• Main purpose of this project was to familiarise myself with deploying and maintaining infrastructure and services.</dd>
-          <dd><small class="text-muted font-italic">- November 2018</small></dd>
-        </dl>
-        <dl class="fadeIn animated" style="animation-delay: 0.7s"> <!--  HARDWARE PROJECTS -->
-          <dt class="arrow"><a href="#" class="no-underline">Gyroscope glove </a><small><kbd class="fadeIn animated" style="animation-delay: 1s">Python, Raspberry Pi, GRPC and Angular</kbd></small></dt>
-          <dd>• Streamed raw data from two gyroscopes over WiFi using ESP8266 to a Raspberry Pi gateway server and then to the main server.</dd>
-          <dd>• Developed a user interface using Angular and displayed graphs representing movement in x, y, z axis as well as the ability to re-calibrate each sensor.</dd>
-          <dd><small class="text-muted font-italic">- July 2019</small></dd>
-        </dl>
-        <dl class="fadeIn animated" style="animation-delay: 0.7s"> <!--  HARDWARE PROJECTS -->
-          <dt class="arrow"><a href="#" class="no-underline">Autonomous Mobile Robot Project </a><small><kbd class="fadeIn animated" style="animation-delay: 1s">C++</kbd></small></dt>
-          <dd>• Arduino controlled robot with 77 RPM high torque motors, PWM drivers.</dd>
-          <dd>• Added multiple functions including PID line following, edge detection, object/obstacle recognition and fire detection/suppression</dd>
-          <dd><small class="text-muted font-italic">- September 2018 - December 2018</small></dd>
-        </dl>
-      </section>
+    <header>
+        <div class="container">
+            <div class="brand"><a href="index.html">frank b.</a></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="projects.html">projects</a></li>
+                    <li><a href="resume.html">resume</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content">
+        <h1>Projects</h1>
+        <div>
+            <h2>[2023] parallel</h2>
+        </div>
+        <div>
+            <h2>[2022] neb</h2>
+        </div>
+        <div>
+            <h2>[2020] stonx</h2>
+        </div>
+        <div>
+            <h2>[2020] cvgen</h2>
+        </div>
+        <div>
+            <h2>[2022] home cluster</h2>
+        </div>
+        <div>
+            <h2>[2020] voter.io</h2>
+        </div>
     </div>
-  </section>
-  <p class="fadeIn animated" style="animation-delay: 1s"><mark><small>Projects' source codes are available on Github under : </small>
-    <a href="https://github.com/franklad" target="_blank" class="text-info no-underline" id="source-link">
-      <i class="fab fa-github"></i>
-      franklad</a></mark></p>
-</div><!-- content container -->
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
+
+    <footer>
+        <div class="container">
+            <sup>
+                <a class="external-links" href="https://www.linkedin.com/in/franklad"> linkedin <br></a>
+                <a class="external-links" href="https://github.com/franklad"> github <br></a>
+            </sup>
+        </div>
+    </footer>
 </body>
 </html>
