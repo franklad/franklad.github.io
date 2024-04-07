@@ -24,6 +24,11 @@ nav ul.nav-links li {
     margin-left: 1em;
 }
 
+ul {
+    list-style: '';
+    padding-left: 2em;
+}
+
 li {
     margin-bottom: 1em;
 }
@@ -44,11 +49,11 @@ h3 {
 
 p {
     font-size: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 p.project {
-    padding-left: 2.5em;
+    padding-left: 2em;
 }
 
 a {
