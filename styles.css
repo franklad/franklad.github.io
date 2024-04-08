@@ -25,7 +25,6 @@ nav ul.nav-links li {
 }
 
 ul {
-    list-style: '';
     padding-left: 2em;
 }
 
@@ -37,14 +36,14 @@ h1 {
     font-size: 1.75em;
 }
 
-h3 {
-    font-size: 1.25em;
-    margin-top: 1.25em;
+h2 {
+    font-size: 1.5em;
+    margin-top: 1.5em;
 }
 
 h3 {
-    font-size: 1.15em;
-    margin-top: 1.15em;;
+    font-size: 1.25em;
+    margin-top: 1.25em;;
 }
 
 p {
