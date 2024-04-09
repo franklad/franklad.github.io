@@ -23,21 +23,24 @@
     <body>
         <header>
             <div class="container">
-                <div class="brand"><a href="index.html">frank b.</a></div>
+                <div class="brand">frank bagherzadeh</div>
                 <nav>
                     <ul class="nav-links">
-                        <li><a href="projects.html">projects</a></li>
-                        <li><a href="resume.html">résumé</a></li>
+                        <li style="padding-right: 3em;"><a class="external-links" href="https://github.com/franklad">github.com/franklad</a></li>
+                        <li><a class="external-links" href="mailto:frankbzd@gmail.com">frankbzd@gmail.com</a></li>
+                    </ul>
+                    <ul class="nav-links">
+                        <li><a class="external-links" href="https://linkedin.com/in/franklad/">linkedin.com/in/franklad</a></li>
+                        <li><a class="external-links" href="https://franklad.com">franklad.com</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
 
-        <div class="content">
-            <h1>résumé</h1>
+        <div style="margin: 3em;">
             <div>
                 <h2>experience</h2>
-                <h3>[2021 - present] Senior Software Engineer @ Clear Street </h3>
+                <h3>[2021 - present] Senior Software Engineer @ Clear Street</h3>
                 <ul>
                     <li>
                         Standardised and automated Docker image mirroring and custom base image creation. This enabled us to
@@ -60,7 +63,7 @@
                         <a class="external-links" href="https://www.clearstreet.io/insights/why-we-moved-to-local-kubernetes-development-at-clear-street"> check out the article we published!</a>
                     </li>
                 </ul>
-                <h3>[2019 - 2020] Software Engineer @ Tulip </h3>
+                <h3>[2019 - 2020] Software Engineer @ Tulip</h3>
                 <ul>
                     <li>
                         Built and maintained Tulip's infrastructure services, high-performance REST/GRPC API, designed in Go.
@@ -70,7 +73,7 @@
                         Learnt a lot about proper infrastructure design and scaling issues surrounding it.
                     </li>
                 </ul>
-                <h3>[2019 - 2019] Software Engineer Intern @ GeoTab </h3>
+                <h3>[2019 - 2019] Software Engineer Intern @ GeoTab</h3>
                 <ul>
                     <li>
                         Developed and maintained multi-threaded software for processing high-volume GPS data,
@@ -84,7 +87,22 @@
             </div>
             <div>
                 <h2>education</h2>
-                <h3>[2017 - 2021] B.Sc. Hon. Computer Science @ Ryerson University </h3>
+                <h3>[2017 - 2021] B.Sc. Hon. Computer Science @ Ryerson University</h3>
+            </div>
+            <div>
+                <h2>projects</h2>
+                <h3>[2023] parallel</h3>
+                <p class="project">
+                    I wrote this library in Go to help standardise running anything in parallel that implements the interface.
+                    The interface is simple: Runnable() and Shutdownable(). It really helped me to have a cleaner code and a
+                    better utilisation of resources like crons, workers, and other parallel tasks.
+                </p>
+                <h3>[2022] neb</h3>
+                <p class="project">
+                    Created neb in Rust to speed up the bootstrapping process of any new Linux machine. I tend to have a fresh system
+                    every six months, so I wanted to automate the process of setting up my environment. For most of the tools,
+                    asdf (or mise) is used as a tool manager.
+                </p>
             </div>
             <div>
                 <h2>skills</h2>
@@ -97,14 +115,5 @@
                 </p>
             </div>
         </div>
-
-        <footer>
-            <div class="container">
-                <sup>
-                    <a class="external-links" href="https://www.linkedin.com/in/franklad"> linkedin <br></a>
-                    <a class="external-links" href="https://github.com/franklad"> github <br></a>
-                </sup>
-            </div>
-        </footer>
     </body>
 </html>
